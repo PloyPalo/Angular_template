@@ -3,7 +3,8 @@
     <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
       <nb-icon icon="menu-2-outline"></nb-icon>
     </a>
-    <a class="logo" href="pages/dashboard" (click)="navigateHome()">
+    <a class="logo" href="pages/dashboard" routerLink="dashboard">
+    <!-- <a class="logo" href="pages/dashboard" (click)="navigateHome()"> -->
       <img class="logohos" src="assets/images/logowachi2.png" priority>
       <span class="namesystem">
         &nbsp;Fort Wachirawut Hospital
@@ -25,10 +26,8 @@
       <nb-search type="rotate-layout"></nb-search>
     </nb-action>
 
-    <nb-action class="user-action" *nbIsGranted="['view', 'user']" >
-      <nb-user [nbContextMenu]="userMenu"
-               [onlyPicture]="userPictureOnly">
-      </nb-user>
+    <nb-action class="user-action"  >
+    <a href="/auth/login" routerLink="login"><span style="font-size:16px;">เข้าสู่ระบบ</span></a> 
     </nb-action>
     
     <!--*email icon*-->
