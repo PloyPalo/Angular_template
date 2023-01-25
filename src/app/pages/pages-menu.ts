@@ -1,5 +1,6 @@
 import { NbMenuItem } from "@nebular/theme";
 
+
 export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: "Dashboard",
@@ -7,7 +8,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: "ภาพรวม",
-    icon: "edit-2-outline",
+    icon: "pie-chart",
     children: [
       {
         title: "ภาพรวมโรงพยาบาล",

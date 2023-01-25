@@ -1,18 +1,20 @@
  @import "~bootstrap/scss/mixins/breakpoints";
  @import "~@nebular/theme/styles/global/breakpoints";
  @import "../../styles/themes";
-
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+ 
+  * {
+    font-family: 'Prompt', sans-serif;
+  }
+  
  @include nb-install-component() {
    display: flex;
    justify-content: space-between;
    width: 100%;
 
-   span.txtlogin {
-     font-size: 18px !important;
-    text-decoration: none;
-   }
-
    a:link {
+ 
+    font-size: 16px;
     text-decoration: none;
    }
 
@@ -32,8 +34,8 @@
    }
 
    img.userac {
-     width: 45px;
-     height: 45px;
+     width: 40px;
+     height: 40px;
    }
 
    nb-action {
