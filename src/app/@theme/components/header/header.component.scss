@@ -1,93 +1,92 @@
-@import "~bootstrap/scss/mixins/breakpoints";
-@import "~@nebular/theme/styles/global/breakpoints";
-@import "../../styles/themes";
+ @import "~bootstrap/scss/mixins/breakpoints";
+ @import "~@nebular/theme/styles/global/breakpoints";
+ @import "../../styles/themes";
 
-@include nb-install-component() {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+ @include nb-install-component() {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
 
-  span.txtlogin {
-    font-size: 18px !important;
+   span.txtlogin {
+     font-size: 18px !important;
     text-decoration: none;
-  }
+   }
 
-  a:link {
+   a:link {
     text-decoration: none;
+   }
+
+   .logohos {
+     width: auto;
+     height: 45px;
   }
 
-  .logohos {
-    width: auto;
-    height: 45px;
-  }
+   .namesystem {
+     font-size: 26px;
+   }
 
-  .namesystem {
-    font-size: 26px;
-  }
+   .logo-container {
+     display: flex;
+     align-items: center;
+     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
+   }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
-  }
+   img.userac {
+     width: 45px;
+     height: 45px;
+   }
 
-  img.userac {
-    width: 45px;
-    height: 45px;
-  }
-
-  nb-action {
-    height: auto;
-    display: flex;
+   nb-action {
+     height: auto;
+     display: flex;
     align-content: center;
-  }
+   }
 
-  nb-user {
+   nb-user {
     cursor: pointer;
+   }
+
+   ::ng-deep nb-search button {
+     padding: 0 !important;
   }
 
-  ::ng-deep nb-search button {
-    padding: 0 !important;
-  }
+   .header-container {
+     display: flex;
+     align-items: center;
+     width: auto;
 
-  .header-container {
-    display: flex;
-    align-items: center;
-    width: auto;
+     .sidebar-toggle {
+       @include nb-ltr(padding-right, 1.25rem);
+       @include nb-rtl(padding-left, 1.25rem);
+       text-decoration: none;
+       color: nb-theme(text-hint-color);
+       nb-icon {
+         font-size: 1.75rem;
+       }
+     }
 
-    .sidebar-toggle {
-      @include nb-ltr(padding-right, 1.25rem);
-      @include nb-rtl(padding-left, 1.25rem);
-      text-decoration: none;
-      color: nb-theme(text-hint-color);
-      nb-icon {
-        font-size: 1.75rem;
-      }
-    }
-
-    .logo {
-      padding: 0 1.25rem;
-      font-size: 1.75rem;
-      @include nb-ltr(border-left, 1px solid nb-theme(divider-color));
+     .logo {
+       padding: 0 1.25rem;
+       font-size: 1.75rem;
+       @include nb-ltr(border-left, 1px solid nb-theme(divider-color));
       @include nb-rtl(border-right, 1px solid nb-theme(divider-color));
-      white-space: nowrap;
+       white-space: nowrap;
       text-decoration: none;
     }
-  }
+   }
 
-  @include media-breakpoint-down(sm) {
-    .control-item {
+   @include media-breakpoint-down(sm) {
+     .control-item {
       display: none;
+     }
+     .user-action {
+       border: none;
+       padding: 0;
     }
-    .user-action {
-      border: none;
-      padding: 0;
-    }
-  }
+   }
 
-  @include media-breakpoint-down(is) {
-    nb-select {
-      display: none;
-    }
-  }
-}
+   @include media-breakpoint-down(is) {
+     nb-select {
+       display: none;    }
+   }
+ }
