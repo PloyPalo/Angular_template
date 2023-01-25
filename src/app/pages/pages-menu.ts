@@ -11,11 +11,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: "ภาพรวมโรงพยาบาล",
-        link: "/pages/forms/form-inputs",
+        link: '/pages/forms/inputs',
       },
       {
         title: "ภาพรวมบุคลากร",
-        link: "/pages/forms/form-layouts",
+        link: '/pages/forms/layouts',
       },
     ],
   },
