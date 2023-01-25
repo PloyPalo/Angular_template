@@ -1,22 +1,22 @@
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from "@nebular/theme";
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-      title: 'Dashboard',
-      group: true,
-    },
+    title: "Dashboard",
+    group: true,
+  },
   {
-    title: 'ภาพรวม',
-    icon: 'edit-2-outline',
+    title: "ภาพรวม",
+    icon: "edit-2-outline",
     children: [
       {
-           title: 'ภาพรวมโรงพยาบาล',
-           link: '/pages/forms/form-inputs',
-           },
-           {
-             title: 'ภาพรวมบุคลากร',
-            link: '/pages/forms/form-layouts',
-          },
+        title: "ภาพรวมโรงพยาบาล",
+        link: "/pages/forms/form-inputs",
+      },
+      {
+        title: "ภาพรวมบุคลากร",
+        link: "/pages/forms/form-layouts",
+      },
     ],
   },
 
@@ -241,26 +241,26 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //     },
   //   ],
   // },
-  {
-    title: 'Auth',
-    icon: 'lock-outline',
-    children: [
-      {
-        title: 'Login',
-        link: '/auth/login',
-      },
-      // {
-      //   title: 'Register',
-      //   link: '/auth/register',
-      // },
-      // {
-      //   title: 'Request Password',
-      //   link: '/auth/request-password',
-      // },
-      // {
-      //   title: 'Reset Password',
-      //   link: '/auth/reset-password',
-      // },
-    ],
-  },
+  // {
+  //   title: 'Auth',
+  //   icon: 'lock-outline',
+  //   children: [
+  //     {
+  //       title: 'Login',
+  //       link: '/auth/login',
+  //     },
+  // {
+  //   title: 'Register',
+  //   link: '/auth/register',
+  // },
+  // {
+  //   title: 'Request Password',
+  //   link: '/auth/request-password',
+  // },
+  // {
+  //   title: 'Reset Password',
+  //   link: '/auth/reset-password',
+  // },
+  // ],
+  // },
 ];

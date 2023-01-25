@@ -1,22 +1,14 @@
-<div class="header-container" >
+<div class="header-container">
   <div class="logo-container">
     <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
       <nb-icon icon="menu-2-outline"></nb-icon>
     </a>
-<<<<<<< HEAD
-    <a class="logo" href="#" (click)="navigateHome()">Smart-<span>Hospital</span></a>
-  </div>
-  <!-- <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
-    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
-  </nb-select> -->
-=======
     <a class="logo" href="pages/dashboard" routerLink="dashboard">
-    <!-- <a class="logo" href="pages/dashboard" (click)="navigateHome()"> -->
-  
-      
-      <img class="logohos" src="assets/images/logowachi.png" priority>
-         
-          <!-- <div class="namesystem">
+      <!-- <a class="logo" href="pages/dashboard" (click)="navigateHome()"> -->
+
+      <img class="logohos" src="assets/images/logowachi.png" priority />
+
+      <!-- <div class="namesystem">
             <p>
             &nbsp; <span>Fort Wachirawut Hospital</span>
             </p>
@@ -28,24 +20,29 @@
   <!-- <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
     <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
   </nb-select>  -->
->>>>>>> ba3dabdb7b407ed8ec65d9d2340b52fa699f7a44
 </div>
 
 <div class="header-container">
   <nb-actions size="small">
-
     <nb-action class="control-item">
       <nb-search type="rotate-layout"></nb-search>
     </nb-action>
 
-    <nb-action class="user-action"  >
-      <a href="/auth/login"><img class="userac" src="assets/images/ios7-contact.png" priority>&nbsp;&nbsp;<span class="txtlogin">เข้าสู่ระบบ</span></a> 
+    <nb-action class="user-action">
+      <a href="/auth/login"
+        ><img
+          class="userac"
+          src="assets/images/ios7-contact.png"
+          priority
+        />&nbsp;&nbsp;<span class="txtlogin">เข้าสู่ระบบ</span></a
+      >
     </nb-action>
-    
+
     <!--*email icon*-->
     <!-- <nb-action class="control-item" icon="email-outline"></nb-action>
     <!--*notication icon*-->
-    <!-- <nb-action class="control-item" icon="bell-outline"></nb-action> --> -->
+    <!-- <nb-action class="control-item" icon="bell-outline"></nb-action> -->
+    -->
     <!--*user account*-->
     <!-- <nb-action class="user-action" *nbIsGranted="['view', 'user']" >
       <nb-user [nbContextMenu]="userMenu"

@@ -1,6 +1,6 @@
-@import '~bootstrap/scss/mixins/breakpoints';
-@import '~@nebular/theme/styles/global/breakpoints';
-@import '../../styles/themes';
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~@nebular/theme/styles/global/breakpoints";
+@import "../../styles/themes";
 
 @include nb-install-component() {
   display: flex;
@@ -10,7 +10,7 @@
   a:link {
     text-decoration: none;
   }
-  
+
   span.txtlogin {
     font-size: 18px !important;
     text-decoration: none;
@@ -18,7 +18,7 @@
 
   .logohos {
     width: auto;
-    height: 50px;
+    height: 45px;
   }
 
   .namesystem {
@@ -31,7 +31,7 @@
     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
   }
 
-  img.userac {  
+  img.userac {
     width: 45px;
     height: 45px;
   }
@@ -47,7 +47,7 @@
   }
 
   ::ng-deep nb-search button {
-    padding: 0!important;
+    padding: 0 !important;
   }
 
   .header-container {
