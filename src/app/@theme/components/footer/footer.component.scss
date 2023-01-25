@@ -7,7 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  a {
+    color: blue($color: #000000);
+    text-decoration: none;
+  }
 
+  .copyright {
+    font-size: 15px;
+  }
   .socials {
     font-size: 2rem;
 

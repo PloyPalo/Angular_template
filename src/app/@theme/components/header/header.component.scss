@@ -7,10 +7,33 @@
   justify-content: space-between;
   width: 100%;
 
+  a:link {
+    text-decoration: none;
+  }
+  
+  span.txtlogin {
+    font-size: 18px !important;
+    text-decoration: none;
+  }
+
+  .logohos {
+    width: auto;
+    height: 50px;
+  }
+
+  .namesystem {
+    font-size: 26px;
+  }
+
   .logo-container {
     display: flex;
     align-items: center;
     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
+  }
+
+  img.userac {  
+    width: 45px;
+    height: 45px;
   }
 
   nb-action {
