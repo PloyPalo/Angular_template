@@ -7,7 +7,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: "ภาพรวม",
-    icon: "edit-2-outline",
+    icon: "pie-chart",
     children: [
       {
         title: "ภาพรวมโรงพยาบาล",
