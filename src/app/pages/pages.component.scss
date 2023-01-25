@@ -2,17 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
 
 @include nb-install-component() {
-
-  
-  ::ng-deep router-outlet + * {
-    display: block;
-    animation: fade 1s;
-
-    
-  * {
+  body {
     font-family: 'Prompt', sans-serif;
   }
 
+  ::ng-deep router-outlet + * {
+    display: block;
+    animation: fade 1s;
+    
     @keyframes fade {
       from {
         opacity: 0;
