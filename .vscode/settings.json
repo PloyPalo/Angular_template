@@ -1,5 +1,11 @@
 {
     "typescript.tsdk": "./node_modules/typescript/lib",
     "tslint.enable": false,
-    "no-input-rename": false
+    "no-input-rename": false,
+    "cSpell.words": [
+      "logohos",
+      "namesystem",
+      "txtlogin",
+      "userac"
+    ]
 }
