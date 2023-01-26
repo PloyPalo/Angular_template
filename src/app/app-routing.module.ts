@@ -1,4 +1,5 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
 import {
   NbAuthComponent,
@@ -15,6 +16,7 @@ export const routes: Routes = [
      loadChildren: () => import('./pages/pages.module')
        .then(m => m.PagesModule),
    },
+   { path: 'login', component: LoginComponent },
   {
     path: 'auth',
     component: NbAuthComponent,
