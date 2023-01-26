@@ -3,7 +3,7 @@ import { NbMenuItem } from "@nebular/theme";
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: "News",
+    title: "ข่าวประชาสัมพันธ์",
     icon: "layout-outline",
     link: "/pages/dashboard",
     home: true,
