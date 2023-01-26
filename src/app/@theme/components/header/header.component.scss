@@ -12,8 +12,34 @@
    justify-content: space-between;
    width: 100%;
 
+   .parentDiv {
+    display: block;
+    height: 110px;
+    width: 400px;
+    font-size: 30px;
+}
+
+    .icon {
+        margin-left: 10px;
+        float: right;
+    }
+
+   .text {
+    font-size: 14px;
+    display: inline;
+    color: white;
+   }
+
+   i.icon{
+    font-size: 40px;
+    color: white;
+   }
+
+   span.inline{
+    display: inline-block;;
+   }
+   
    a:link {
- 
     font-size: 16px;
     text-decoration: none;
    }

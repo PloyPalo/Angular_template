@@ -7,20 +7,26 @@
   font-family: 'Prompt', sans-serif;
 }
 
+a {
+  color: #E14D2A;
+  text-decoration: none;
+}
+
+.hospital {
+  color: #E14D2A;
+}
+
+.copyright {
+  color: white;
+  font-size: 15px;
+}
+
 @include nb-install-component() {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-  a {
-    color: blue($color: #000000);
-    text-decoration: none;
-  }
-
-  .copyright {
-    font-size: 15px;
-  }
   .socials {
     font-size: 2rem;
 
