@@ -1,7 +1,7 @@
-<div class="header-container" >
+<div class="header-container">
   <div class="logo-container">
     <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
-      <nb-icon icon="menu-2-outline"></nb-icon>
+      <nb-icon icon="menu-2-outline" style="color: white;"></nb-icon>
     </a>
     <a class="logo" href="pages/dashboard" routerLink="dashboard">
     <!-- <a class="logo" href="pages/dashboard" (click)="navigateHome()"> -->
@@ -18,9 +18,9 @@
   </div>
 
   <!--*Theme Color Dashboard*-->
-   <!-- <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+    <!-- <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
     <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
-  </nb-select>   -->
+  </nb-select>    -->
 </div>
 
 <div class="header-container">
@@ -31,13 +31,10 @@
     </nb-action>
 
     <nb-action class="user-action">
-      <a href="/auth/login">
-        <img
-          class="userac"
-          src="assets/images/ios7-contact.png"
-          priority
-        />&nbsp;&nbsp;<span class="txtlogin">เข้าสู่ระบบ</span></a>
-      
+        <span class="icon">
+          <a href="/auth/login"><i class="icon ion-ios-contact-outline"></i></a>
+        </span>
+        <a href="/auth/login"><span class="text">&nbsp; เข้าสู่ระบบ</span></a>
     </nb-action>
 
     <!--*email icon*-->

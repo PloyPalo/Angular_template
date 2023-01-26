@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <span class="created-by">
      <span class="copyright">Copyright © 2023 :</span>
-     <span>&nbsp;<a href="https://fortwachirawuthospital.rta.mi.th/homepage/">Fort Wachirawut Hospital</a> </span>
+     <span style="color: #FD841F;">&nbsp; Fort Wachirawut Hospital </span>
       <!-- Created with ♥ by <b><a href="https://akveo.page.link/8V2f" target="_blank">Akveo</a></b> 2019 -->
     </span>
     <div class="socials">

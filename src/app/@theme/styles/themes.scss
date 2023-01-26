@@ -4,6 +4,8 @@
 @import '~@nebular/theme/styles/themes';
 
 $nb-themes: nb-register-theme((
+  header-background-color: #4B56D2,
+  footer-background-color: #4B56D2,
   layout-padding-top: 2.25rem,
 
   menu-item-icon-margin: 0 0.5rem 0 0,
