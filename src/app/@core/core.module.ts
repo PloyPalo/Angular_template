@@ -1,6 +1,6 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbAuthModule, NbDummyAuthStrategy } from '@nebular/auth';
+import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 import { NbSecurityModule, NbRoleProvider } from '@nebular/security';
 import { of as observableOf } from 'rxjs';
 
@@ -106,17 +106,64 @@ export const NB_CORE_PROVIDERS = [
   ...NbAuthModule.forRoot({
 
     strategies: [
-      NbDummyAuthStrategy.setup({
+      NbPasswordAuthStrategy.setup({
         name: 'email',
-        delay: 3000,
+        token: {
+          key: 'password',
+        },
+        baseEndpoint: '',
+
+        login: {
+          endpoint: '/user/tokenbybody',
+          method: 'POST',
+        },
+
+        register: {
+          endpoint: '/user/create',
+          method: 'POST',
+        },
+
+        logout: {
+          endpoint: '/user/logout',
+          method: 'POST',
+        },
+
+        requestPass: {
+          endpoint: '/password/forgotpassword',
+          method: 'POST',
+        },
+
+        resetPass: {
+          endpoint: '/password/changepassword',
+          method: 'POST',
+        }
       }),
     ],
+
     forms: {
       login: {
-        socialLinks: socialLinks,
+        redirectDelay: 500,
+        strategy: 'email',
+        rememberMe: false,
+        showMessages: {
+          success: true,
+          error:true,
+        },
+        redirect: {
+          success: '/',
+          failure: null,
+        },
+        // socialLinks: socialLinks,
       },
       register: {
-        socialLinks: socialLinks,
+        redirectDelay: 500,
+        strategy: 'email',
+        showMessages: {
+          success: true,
+          error:true,
+        },
+        terms: true,
+        // socialLinks: socialLinks,
       },
     },
   }).providers,
