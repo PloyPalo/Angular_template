@@ -1,3 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 80%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 nb-card-body {
   overflow: visible;
   padding-top: 0;
