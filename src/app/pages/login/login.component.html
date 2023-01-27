@@ -1,3 +1,5 @@
+
+<div class="card">
 <h1 id="title" class="title">เข้าสู่ระบบ</h1>
 <p class="sub-title">Hello! Log in with your email.</p>
 
@@ -15,46 +17,56 @@
   </ul>
 </nb-alert> -->
 
-<form  aria-labelledby="title">
+<div class="container">
+    <form  aria-labelledby="title">
 
-  <div class="form-control-group">
-    <label class="label" for="input-email">Email address:</label>
-    <input >
-    <ng-container >
-      <p class="caption status-danger" >
-        Email is required!
-      </p>
-      <p class="caption status-danger">
-        Email should be the real one!
-      </p>
-    </ng-container>
+      <div class="row">
+        <div class="col-25">
+          <label class="label" for="input-email">Email address:</label>
+        </div>
+
+        <div class="col-75">
+          <input type="text" placeholder="Email address">
+        </div>
+      </div>
+        <!-- <ng-container >
+          <p class="caption status-danger" >
+            Email is required!
+          </p>
+          <p class="caption status-danger">
+            Email should be the real one!
+          </p>
+        </ng-container> -->
+
+
+      <div class="row">
+        <div class="col-25">
+          <label class="label" for="input-password"><br>Password:</label>
+        </div>
+
+        <div class="col-75">
+          <input type="text" placeholder="Password">
+        </div>
+        <a class="forgot-password caption-2" routerLink="../request-password">Forgot Password</a>
+      </div>
+
+      <br>
+
+<!--
+        <ng-container>
+          <p class="caption status-danger" >
+            Password is required!
+          </p>
+          <p class="caption status-danger">
+          Password should contain
+            from {{ getConfigValue('forms.validation.password.minLength') }}
+            to {{ getConfigValue('forms.validation.password.maxLength') }}
+            characters
+          </p>
+        </ng-container> -->
+
+      <div style="text-align:center;"><a href="/pages/dashboard"><button class="buttonhome button2"
+        role="button"> Log In </button></a></div>
+    </form>
   </div>
-
-  <div class="form-control-group">
-    <span class="label-with-link">
-      <label class="label" for="input-password">Password:</label>
-      <a class="forgot-password caption-2" routerLink="../request-password">Forgot Password?</a>
-    </span>
-    <input>
-    <ng-container>
-      <p class="caption status-danger" >
-        Password is required!
-      </p>
-      <p class="caption status-danger">
-        <!-- Password should contain
-        from {{ getConfigValue('forms.validation.password.minLength') }}
-        to {{ getConfigValue('forms.validation.password.maxLength') }}
-        characters -->
-      </p>
-    </ng-container>
-  </div>
-
-  <div class="form-control-group accept-group">
-    <nb-checkbox name="rememberMe" [(ngModel)]="user.rememberMe" *ngIf="">Remember me</nb-checkbox>
-  </div>
-
-  <button >
-    Log In
-  </button>
-</form>
-
+</div>

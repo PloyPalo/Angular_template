@@ -1,0 +1,154 @@
+// @use '../../theme/styles/globals' as *;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+  * {
+    font-family: 'Prompt', sans-serif;
+  }
+
+  // .container {
+
+  //   padding: 20px;
+  // }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    height: 500px;
+    border-radius: 25px 25px 25px 25px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5%;
+    display: flex;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 2px;
+    text-align: left;
+    padding-left: 3cm;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 15%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+  }
+
+  .ng-container {
+
+    display: block;
+    margin: auto;
+    justify-content: center;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    padding-left: 55px;
+  }
+
+  input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+  }
+
+  .buttonhome{
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 10px 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 35%;
+    word-break: break-word;
+    border: 0;
+
+  }
+
+  .button2:hover {
+     background: #6e6ee1;
+     box-shadow: 0 8px 12px 0 rgba(73, 73, 73, 0.371),0 8px 20px 0 rgb(255, 255, 255);
+     font-size: 20px;
+     font-weight: 400;
+   }
+// :host {
+//   $auth-layout-padding: 2.5rem;
+
+//   nb-card {
+//     margin: 0;
+//     height: calc(100vh - 2 * #{$auth-layout-padding});
+//   }
+
+//   .navigation .link {
+//     display: inline-block;
+//     text-decoration: none;
+
+//     nb-icon {
+//       font-size: 2rem;
+//       vertical-align: middle;
+//     }
+//   }
+
+//   .links nb-icon {
+//     font-size: 2.5rem;
+//   }
+
+//   nb-card-body {
+//     display: flex;
+//     width: 100%;
+//   }
+
+//   nb-auth-block {
+//     margin: auto;
+//  }
+
+  // @include media-breakpoint-down(sm) {
+  //   nb-card {
+  //     border-radius: 0;
+  //     height: 100vh;
+  //   }
+  // }
+
+  // ::ng-deep {
+  //   nb-layout .layout .layout-container .content .columns nb-layout-column {
+  //     padding: $auth-layout-padding;
+
+  //     @include media-breakpoint-down(sm) {
+  //       padding: 0;
+  //     }
+  //   }
+  // }
+
