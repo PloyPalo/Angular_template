@@ -10,13 +10,13 @@
   }
   
   a {
-    color: #E14D2A;
+    color: #FD841F;
     text-decoration: none;
   }
   
   .hospital {
     font-size: 16px;
-    color: #E14D2A;
+    color: #FD841F;
   }
   
   .copyright {
@@ -43,39 +43,28 @@
     }
   }
 
-  @media (min-width: 2560px) {
+  @include media-breakpoint-down(sm) {
+    .hospital {
+      font-size: 14px;
+      color: #FD841F;
+    }
     
-  }
-
-  @media (min-width: 1920px) {
-    
-  }
-
-  @media (min-width: 1080px) {
-
-  }
-
-  @media (min-width: 1440px) {
-
-  }
-
-  @media (min-width: 1024px) {
-
-  }
-
-  @media (min-width: 768px) {
-
-  }
-
-  @media (min-width: 425px) {
-
-  }
-
-  @media (min-width: 375px) {
-
+    .copyright {
+      color: white;
+      font-size: 14px;
+    }
   }
 
   @include media-breakpoint-down(is) {
+    .hospital {
+      white-space: pre;
+      font-size: 12px;
+      color: #FD841F;
+    }
+    .copyright {
+      color: white;
+      font-size: 12px;
+    }
     .socials {
       font-size: 1.5rem;
     }
